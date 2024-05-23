@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jelentkezési Űrlap</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .form-container, .image-container {
+    flex-basis: 48%;
+  }
+  input[type=text], input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+  }
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  .submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .form-container, .image-container {
+      flex-basis: 100%;
+    }
+  }
+  /* Ide jöhet a saját navbar stílusa */
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Ide jöhet a saját navbar kódja -->
+  
+  <div class="form-container">
+    <form id="registration-form">
+      <label for="lastname">Vezetéknév:</label>
+      <input type="text" id="lastname" name="lastname" required>
+      
+      <label for="firstname">Keresztnév:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      
+      <label for="email">Email-cím:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="city">Város:</label>
+      <input type="text" id="city" name="city" required>
+      
+      <label for="zipcode">Irányítószám:</label>
+      <input type="text" id="zipcode" name="zipcode" required>
+      
+      <!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jelentkezési Űrlap</title>
+<style>
+  /* ... További stílusok ... */
+  .submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  /* ... További responsive stílusok ... */
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Ide jöhet a saját navbar kódja -->
+  
+  <div class="form-container">
+    <form id="registration-form">
+      <!-- ... További mezők ... -->
+      
+      <label for="county">Megye:</label>
+      <input list="counties" id="county" name="county" required>
+      <datalist id="counties">
+        <!-- Itt felsorolhatja a megyéket -->
+        <option value="Bács-Kiskun">
+        <option value="Baranya">
+        <option value="Békés">
+        <!-- ... További megyék ... -->
+      </datalist>
+      
+      <button type="submit" class="submit-btn">Jelentkezés</button>
+    </form>
+  </div>
+  
+  <!-- ... Kép konténer ... -->
+</div>
+
+<script>
+  document.getElementById('registration-form').onsubmit = function(event) {
+    event.preventDefault();
+    // Itt lehet kezelni az űrlap adatait.
+    alert('Jelentkezését rögzítettük!');
+  };
+</script>
+
+</body>
+</html>
+
+      
+      <button type="submit" class="submit-btn">Jelentkezés</button>
+    </form>
+  </div>
+  
+  <div class="image-container">
+    <!-- Ide helyezze a képet -->
+    <img src="kep_helye.jpg" alt="Kép" style="max-width:100%;">
+  </div>
+</div>
+
+<script>
+  document.getElementById('registration-form').onsubmit = function(event) {
+    event.preventDefault();
+    // Itt lehet kezelni az űrlap adatait.
+    alert('Jelentkezését rögzítettük!');
+  };
+</script>
+
+</body>
+</html>
